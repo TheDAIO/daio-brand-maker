@@ -1,0 +1,21 @@
+{
+  "type": "erc8004-agent-registration",
+  "name": "Logo Agent (x402)",
+  "description": "Paid logo icon generation API. Returns 3 transparent PNG candidates after x402 payment.",
+  "image": "",
+  "services": [
+    {
+      "type": "http",
+      "name": "x402 Logo API",
+      "url": "http://localhost:3000/v1/logo",
+      "method": "POST",
+      "payment": { "protocol": "x402" }
+    }
+  ],
+  "registrations": [
+    {
+      "agentRegistry": "eip155:8453:0x8004A169FB4a3325136EB29fA0ceB6D2e539a432",
+      "agentId": ""
+    }
+  ]
+}
