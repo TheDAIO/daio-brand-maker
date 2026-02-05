@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: daio-brand-maker
+    runtime: node
+    plan: starter
+    region: oregon
+    buildCommand: npm ci
+    startCommand: npm run start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OPENAI_IMAGE_MODEL
+        value: gpt-image-1
+      - key: PAYMENT_NETWORK
+        value: base
+      - key: PAYMENT_ASSET
+        value: USDC
+      - key: PRICE_USDC
+        value: "10"
+      - key: USDC_CONTRACT_BASE
+        value: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913
+    healthCheckPath: /health

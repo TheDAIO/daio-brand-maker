@@ -13,6 +13,19 @@ Minimal MVP: **x402-paid** logo icon generator API (3 candidates) registered on 
   - If no payment proof: returns **HTTP 402** with an `accepts` array (x402-style offer)
   - If payment proof present (MVP stub): generates **3 icon-only candidates** and returns transparent PNGs (1024/512/256)
 
+## Deploy on Render
+
+This repo includes a `render.yaml` blueprint.
+
+On Render:
+- Create **New** → **Blueprint**
+- Select this repo
+- Set required secrets in the Render dashboard (see `.env.example`), especially:
+  - `OPENAI_API_KEY`
+  - `PAYMENT_RECIPIENT`
+
+Then deploy.
+
 ## Quickstart
 
 ```bash

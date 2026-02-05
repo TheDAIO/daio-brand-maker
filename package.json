@@ -16,6 +16,9 @@
   ],
   "author": "Sage",
   "license": "MIT",
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "dotenv": "^17.2.3",
     "ethers": "^6.16.0",
