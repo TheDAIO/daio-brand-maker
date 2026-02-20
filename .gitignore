@@ -3,5 +3,8 @@ node_modules
 .DS_Store
 *.log
 
+# secrets
+config/*.secret.json
+
 # build artifacts
 /dist
